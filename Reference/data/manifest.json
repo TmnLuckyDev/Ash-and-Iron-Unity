@@ -1,0 +1,12 @@
+{
+  "revision": "6456e9a94f5966bcea0b266da9a1c4bcae0616fa",
+  "entities": 115,
+  "training": 65,
+  "research": 31,
+  "maps": 6,
+  "mapFixtures": 36,
+  "sha256": {
+    "rules.json": "aa14c4cb71ccc50e973cb9899a829add794934bd0b83334cc9ea20885318c817",
+    "maps.json.gz": "b3b2da8bca6cd5a86b071e1a4632638cb1c52624c4750503221a868712b78351"
+  }
+}

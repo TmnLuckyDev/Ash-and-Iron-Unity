@@ -1,0 +1,76 @@
+asset AaiRulesAsset;
+asset AaiMapAsset;
+
+struct AaiResourceSettings {
+  Int32 CountPerSide;
+  bool UnlimitedStock;
+  Int32 Stock;
+  bool UnlimitedWorkers;
+  Int32 MaxWorkers;
+}
+
+struct AaiMatchSettings {
+  AaiMode Mode;
+  bool Progression;
+  bool RandomStarts;
+  bool ExtendedReconnect;
+  bool HasTimeLimit;
+  Int32 TimeLimitTicks;
+  Int32 PopulationCap;
+  AaiResources Starting;
+  array<AaiResourceSettings>[3] Sources;
+}
+
+struct AaiStatistics {
+  AaiResources Gathered;
+  Int32 UnitsTrained;
+  Int32 TroopsTrained;
+  Int32 BuildingsBuilt;
+  Int32 BuildingsRazed;
+  Int32 EnemiesKilled;
+  Int32 UnitsLost;
+  Int32 BuildingsLost;
+}
+
+component AaiPlayer {
+  player_ref Player;
+  bool IsComputer;
+  AaiSeat Seat;
+  Byte Team;
+  AaiRace Race;
+  AaiResources Bank;
+  Int32 PopulationUsed;
+  Int32 PopulationReserved;
+  Int32 PopulationCapacity;
+  Int32 PopulationCap;
+  Byte TownHallLevel;
+  array<Byte>[7] ResearchLevels;
+  array<Int32>[2] RetainedHeroExperience;
+  AaiStatistics Stats;
+  entity_ref Headquarters;
+  entity_ref ActiveHero;
+  Int32 ControlScore;
+  Int32 NextGroupId;
+}
+
+component AaiMatch {
+  asset_ref<AaiRulesAsset> Rules;
+  asset_ref<AaiMapAsset> Map;
+  UInt32 MapSeed;
+  AaiMatchSettings Settings;
+  array<entity_ref>[2] Players;
+  Int32 ElapsedTicks;
+  Int32 NavigationRevision;
+  AaiResult Result;
+  AaiSeat Winner;
+}
+
+component AaiControlPoint {
+  FPVector2 Position;
+  AaiSeat Owner;
+  bool Contested;
+}
+
+global {
+  entity_ref AaiMatchEntity;
+}

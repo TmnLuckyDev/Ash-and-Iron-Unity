@@ -1,0 +1,17 @@
+name: Reference integrity
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - run: node Reference/validate-package.mjs
+      - run: node Reference/compile-assets.mjs --check

@@ -1,0 +1,7 @@
+{
+  "name": "AshAndIron.EditorTests",
+  "references": ["Quantum.Simulation"],
+  "includePlatforms": ["Editor"],
+  "allowUnsafeCode": true,
+  "optionalUnityReferences": ["TestAssemblies"]
+}

@@ -1,0 +1,34 @@
+component AaiHero {
+  Int32 Experience;
+  Byte Level;
+  Int32 RecoverAtTick;
+}
+
+component AaiAbility {
+  Int32 ReadyAtTick;
+  Int32 ActiveUntilTick;
+}
+
+struct AaiGroupTarget {
+  AaiKind Kind;
+  Int32 Count;
+}
+
+component AaiArmyGroup {
+  entity_ref Owner;
+  Int32 GroupId;
+  Int32 Priority;
+  QString<128> Name;
+  [AllocateOnComponentAdded, FreeOnComponentRemoved] list<AaiGroupTarget> Desired;
+  [AllocateOnComponentAdded, FreeOnComponentRemoved] list<entity_ref> Members;
+  bool HasRally;
+  FPVector2 Rally;
+  AaiOrderData ActiveOrder;
+  // Disabled in parity mode until the proposed automation is implemented.
+  bool AutoReplenish;
+  AaiResources ReservedResources;
+}
+
+component AaiGroupMember {
+  entity_ref Group;
+}

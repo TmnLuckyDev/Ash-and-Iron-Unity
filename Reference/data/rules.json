@@ -1,0 +1,3716 @@
+{
+  "schemaVersion": 1,
+  "revision": "6456e9a94f5966bcea0b266da9a1c4bcae0616fa",
+  "ticksPerSecond": 20,
+  "tile": 32,
+  "races": [
+    "human",
+    "orc",
+    "dwarf",
+    "elf",
+    "undead"
+  ],
+  "entityKinds": [
+    "blade",
+    "polearm",
+    "ranged",
+    "marksman",
+    "heavy",
+    "vanguard",
+    "pathfinder",
+    "siege",
+    "support",
+    "scout",
+    "worker",
+    "transport",
+    "warship",
+    "headquarters",
+    "barracks",
+    "range",
+    "elite",
+    "farm",
+    "wall",
+    "tower",
+    "smithy",
+    "port",
+    "settlement"
+  ],
+  "unitKinds": [
+    "blade",
+    "polearm",
+    "ranged",
+    "marksman",
+    "heavy",
+    "vanguard",
+    "pathfinder",
+    "siege",
+    "support",
+    "scout",
+    "worker",
+    "transport",
+    "warship"
+  ],
+  "buildingKinds": [
+    "barracks",
+    "range",
+    "elite",
+    "farm",
+    "wall",
+    "tower",
+    "smithy",
+    "port",
+    "settlement"
+  ],
+  "researchKinds": [
+    "weapons",
+    "armor",
+    "precision",
+    "vitality",
+    "range",
+    "speed",
+    "fortress"
+  ],
+  "resources": [
+    "gold",
+    "wood",
+    "stone"
+  ],
+  "formations": [
+    "line",
+    "compact",
+    "spread"
+  ],
+  "entityNames": {
+    "human": {
+      "siege": "Siege Engine",
+      "support": "Support",
+      "blade": "Footman",
+      "polearm": "Pikeman",
+      "ranged": "Archer",
+      "marksman": "Crossbowman",
+      "heavy": "Knight",
+      "vanguard": "Aldren the Warden",
+      "pathfinder": "Nera the Pathfinder",
+      "scout": "Scout",
+      "transport": "Transport Ship",
+      "warship": "Warship",
+      "settlement": "Settlement",
+      "headquarters": "Town Hall",
+      "worker": "Peasant",
+      "barracks": "Barracks",
+      "range": "Archery Range",
+      "elite": "Stables",
+      "farm": "Farm",
+      "wall": "Stone Wall",
+      "tower": "Guard Tower",
+      "smithy": "Blacksmith",
+      "port": "Harbor"
+    },
+    "orc": {
+      "siege": "Siege Engine",
+      "support": "Support",
+      "blade": "Grunt",
+      "polearm": "Cleaver",
+      "ranged": "Spearman",
+      "marksman": "Axe Thrower",
+      "heavy": "Ogre",
+      "vanguard": "Gorak Ironhand",
+      "pathfinder": "Vesha Emberbow",
+      "scout": "Scout",
+      "transport": "Transport Ship",
+      "warship": "Warship",
+      "settlement": "Settlement",
+      "headquarters": "Great Hall",
+      "worker": "Peon",
+      "barracks": "War Barracks",
+      "range": "Hunting Grounds",
+      "elite": "Ogre Den",
+      "farm": "Boar Farm",
+      "wall": "Stone Rampart",
+      "tower": "Watch Tower",
+      "smithy": "War Forge",
+      "port": "War Port"
+    },
+    "dwarf": {
+      "blade": "Ironbreaker",
+      "polearm": "Hammerguard",
+      "ranged": "Thunderer",
+      "marksman": "Runebolt Gunner",
+      "heavy": "Stoneguard",
+      "siege": "Siege Cannon",
+      "support": "Support",
+      "scout": "Tunnel Pathfinder",
+      "worker": "Delver",
+      "vanguard": "Thorin Stoneheart",
+      "pathfinder": "Bromm Thunderforge",
+      "headquarters": "Mountain Hall",
+      "settlement": "Settlement",
+      "barracks": "Iron Barracks",
+      "range": "Powder Hall",
+      "elite": "Foundry",
+      "farm": "Deep Mine",
+      "wall": "Runestone Wall",
+      "tower": "Stone Bastion",
+      "smithy": "Rune Forge",
+      "port": "Iron Dock",
+      "transport": "Armored Ferry",
+      "warship": "Iron Warship"
+    },
+    "elf": {
+      "blade": "Bladedancer",
+      "polearm": "Thorn Guard",
+      "ranged": "Sylvan Archer",
+      "marksman": "Forest Sentinel",
+      "heavy": "Grove Warden",
+      "siege": "Thorn Ballista",
+      "support": "Druid",
+      "scout": "Woodland Scout",
+      "worker": "Grove Tender",
+      "vanguard": "Faelar Swiftwind",
+      "pathfinder": "Aelindra Moonwhisper",
+      "headquarters": "Ancient Grove",
+      "settlement": "Settlement",
+      "barracks": "Blade Circle",
+      "range": "Ranger Lodge",
+      "elite": "Moon Sanctuary",
+      "farm": "Sacred Tree",
+      "wall": "Briar Wall",
+      "tower": "Living Watchtower",
+      "smithy": "Leafweave Atelier",
+      "port": "Willow Harbor",
+      "transport": "Leaf Ferry",
+      "warship": "Grove Warship"
+    },
+    "undead": {
+      "blade": "Skeleton Warrior",
+      "polearm": "Ghoul",
+      "ranged": "Bone Archer",
+      "marksman": "Grave Marksman",
+      "heavy": "Abomination",
+      "siege": "Bone Catapult",
+      "support": "Necromancer",
+      "scout": "Grave Wisp",
+      "worker": "Thrall",
+      "vanguard": "Vorrak the Deathlord",
+      "pathfinder": "Malachar the Lich",
+      "headquarters": "Necropolis",
+      "settlement": "Settlement",
+      "barracks": "Crypt",
+      "range": "Bone Arsenal",
+      "elite": "Fleshworks",
+      "farm": "Graveyard",
+      "wall": "Ossuary Wall",
+      "tower": "Bone Spire",
+      "smithy": "Dark Sanctum",
+      "port": "Drowned Pier",
+      "transport": "Soul Barge",
+      "warship": "Dread Warship"
+    }
+  },
+  "factionNames": {
+    "human": "Valorian Crown",
+    "orc": "Bloodfang Horde",
+    "dwarf": "Ironbound Clans",
+    "elf": "Sylvan Covenant",
+    "undead": "Hollow Legion"
+  },
+  "entities": [
+    {
+      "race": "human",
+      "kind": "blade",
+      "name": "Footman",
+      "health": 96,
+      "damage": 15,
+      "armor": 3,
+      "range": 24,
+      "speed": 77,
+      "cooldown": 12,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "polearm",
+      "name": "Pikeman",
+      "health": 120,
+      "damage": 19,
+      "armor": 4,
+      "range": 34,
+      "speed": 76,
+      "cooldown": 15,
+      "radius": 10,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "ranged",
+      "name": "Archer",
+      "health": 66,
+      "damage": 13,
+      "armor": 1,
+      "range": 127,
+      "speed": 73,
+      "cooldown": 17,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "marksman",
+      "name": "Crossbowman",
+      "health": 82,
+      "damage": 24,
+      "armor": 2,
+      "range": 151,
+      "speed": 64,
+      "cooldown": 24,
+      "radius": 10,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "heavy",
+      "name": "Knight",
+      "health": 240,
+      "damage": 34,
+      "armor": 7,
+      "range": 28,
+      "speed": 104,
+      "cooldown": 18,
+      "radius": 12,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "vanguard",
+      "name": "Aldren the Warden",
+      "health": 451,
+      "damage": 43,
+      "armor": 7,
+      "range": 30,
+      "speed": 86,
+      "cooldown": 18,
+      "radius": 15,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "pathfinder",
+      "name": "Nera the Pathfinder",
+      "health": 333,
+      "damage": 34,
+      "armor": 4,
+      "range": 158,
+      "speed": 87,
+      "cooldown": 18,
+      "radius": 13,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "siege",
+      "name": "Siege Engine",
+      "health": 165,
+      "damage": 28,
+      "armor": 3,
+      "range": 185,
+      "speed": 47,
+      "cooldown": 32,
+      "radius": 13,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "support",
+      "name": "Support",
+      "health": 88,
+      "damage": 0,
+      "armor": 1,
+      "range": 0,
+      "speed": 75,
+      "cooldown": 0,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "scout",
+      "name": "Scout",
+      "health": 48,
+      "damage": 0,
+      "armor": 0,
+      "range": 0,
+      "speed": 148,
+      "cooldown": 0,
+      "radius": 7,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "worker",
+      "name": "Peasant",
+      "health": 55,
+      "damage": 0,
+      "armor": 0,
+      "range": 0,
+      "speed": 86,
+      "cooldown": 0,
+      "radius": 8,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "transport",
+      "name": "Transport Ship",
+      "health": 550,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 100,
+      "cooldown": 0,
+      "radius": 18,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "warship",
+      "name": "Warship",
+      "health": 650,
+      "damage": 35,
+      "armor": 5,
+      "range": 120,
+      "speed": 82,
+      "cooldown": 28,
+      "radius": 19,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "headquarters",
+      "name": "Town Hall",
+      "health": 1500,
+      "damage": 0,
+      "armor": 5,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 30,
+      "trains": [
+        "worker",
+        "scout",
+        "vanguard",
+        "pathfinder"
+      ]
+    },
+    {
+      "race": "human",
+      "kind": "barracks",
+      "name": "Barracks",
+      "health": 550,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 25,
+      "trains": [
+        "blade",
+        "polearm"
+      ]
+    },
+    {
+      "race": "human",
+      "kind": "range",
+      "name": "Archery Range",
+      "health": 490,
+      "damage": 0,
+      "armor": 2,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 24,
+      "trains": [
+        "ranged",
+        "marksman"
+      ]
+    },
+    {
+      "race": "human",
+      "kind": "elite",
+      "name": "Stables",
+      "health": 690,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 27,
+      "trains": [
+        "heavy",
+        "siege"
+      ]
+    },
+    {
+      "race": "human",
+      "kind": "farm",
+      "name": "Farm",
+      "health": 310,
+      "damage": 0,
+      "armor": 1,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 21,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "wall",
+      "name": "Stone Wall",
+      "health": 360,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 16,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "tower",
+      "name": "Guard Tower",
+      "health": 460,
+      "damage": 20,
+      "armor": 3,
+      "range": 205,
+      "speed": 0,
+      "cooldown": 20,
+      "radius": 17,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "smithy",
+      "name": "Blacksmith",
+      "health": 620,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 24,
+      "trains": []
+    },
+    {
+      "race": "human",
+      "kind": "port",
+      "name": "Harbor",
+      "health": 750,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 28,
+      "trains": [
+        "transport",
+        "warship"
+      ]
+    },
+    {
+      "race": "human",
+      "kind": "settlement",
+      "name": "Settlement",
+      "health": 580,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 25,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "blade",
+      "name": "Grunt",
+      "health": 94,
+      "damage": 15,
+      "armor": 3,
+      "range": 23,
+      "speed": 80,
+      "cooldown": 12,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "polearm",
+      "name": "Cleaver",
+      "health": 118,
+      "damage": 19,
+      "armor": 3,
+      "range": 34,
+      "speed": 74,
+      "cooldown": 15,
+      "radius": 10,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "ranged",
+      "name": "Spearman",
+      "health": 66,
+      "damage": 13,
+      "armor": 1,
+      "range": 123,
+      "speed": 76,
+      "cooldown": 17,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "marksman",
+      "name": "Axe Thrower",
+      "health": 82,
+      "damage": 24,
+      "armor": 1,
+      "range": 136,
+      "speed": 67,
+      "cooldown": 23,
+      "radius": 10,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "heavy",
+      "name": "Ogre",
+      "health": 240,
+      "damage": 34,
+      "armor": 7,
+      "range": 28,
+      "speed": 81,
+      "cooldown": 20,
+      "radius": 13,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "vanguard",
+      "name": "Gorak Ironhand",
+      "health": 451,
+      "damage": 43,
+      "armor": 7,
+      "range": 30,
+      "speed": 86,
+      "cooldown": 18,
+      "radius": 15,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "pathfinder",
+      "name": "Vesha Emberbow",
+      "health": 333,
+      "damage": 34,
+      "armor": 4,
+      "range": 158,
+      "speed": 87,
+      "cooldown": 18,
+      "radius": 13,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "siege",
+      "name": "Siege Engine",
+      "health": 165,
+      "damage": 28,
+      "armor": 3,
+      "range": 185,
+      "speed": 47,
+      "cooldown": 32,
+      "radius": 13,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "support",
+      "name": "Support",
+      "health": 88,
+      "damage": 0,
+      "armor": 1,
+      "range": 0,
+      "speed": 75,
+      "cooldown": 0,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "scout",
+      "name": "Scout",
+      "health": 48,
+      "damage": 0,
+      "armor": 0,
+      "range": 0,
+      "speed": 148,
+      "cooldown": 0,
+      "radius": 7,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "worker",
+      "name": "Peon",
+      "health": 55,
+      "damage": 0,
+      "armor": 0,
+      "range": 0,
+      "speed": 86,
+      "cooldown": 0,
+      "radius": 8,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "transport",
+      "name": "Transport Ship",
+      "health": 550,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 100,
+      "cooldown": 0,
+      "radius": 18,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "warship",
+      "name": "Warship",
+      "health": 650,
+      "damage": 35,
+      "armor": 5,
+      "range": 120,
+      "speed": 82,
+      "cooldown": 28,
+      "radius": 19,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "headquarters",
+      "name": "Great Hall",
+      "health": 1500,
+      "damage": 0,
+      "armor": 5,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 30,
+      "trains": [
+        "worker",
+        "scout",
+        "vanguard",
+        "pathfinder"
+      ]
+    },
+    {
+      "race": "orc",
+      "kind": "barracks",
+      "name": "War Barracks",
+      "health": 550,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 25,
+      "trains": [
+        "blade",
+        "polearm"
+      ]
+    },
+    {
+      "race": "orc",
+      "kind": "range",
+      "name": "Hunting Grounds",
+      "health": 490,
+      "damage": 0,
+      "armor": 2,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 24,
+      "trains": [
+        "ranged",
+        "marksman"
+      ]
+    },
+    {
+      "race": "orc",
+      "kind": "elite",
+      "name": "Ogre Den",
+      "health": 690,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 27,
+      "trains": [
+        "heavy",
+        "siege"
+      ]
+    },
+    {
+      "race": "orc",
+      "kind": "farm",
+      "name": "Boar Farm",
+      "health": 310,
+      "damage": 0,
+      "armor": 1,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 21,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "wall",
+      "name": "Stone Rampart",
+      "health": 360,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 16,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "tower",
+      "name": "Watch Tower",
+      "health": 460,
+      "damage": 20,
+      "armor": 3,
+      "range": 205,
+      "speed": 0,
+      "cooldown": 20,
+      "radius": 17,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "smithy",
+      "name": "War Forge",
+      "health": 620,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 24,
+      "trains": []
+    },
+    {
+      "race": "orc",
+      "kind": "port",
+      "name": "War Port",
+      "health": 750,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 28,
+      "trains": [
+        "transport",
+        "warship"
+      ]
+    },
+    {
+      "race": "orc",
+      "kind": "settlement",
+      "name": "Settlement",
+      "health": 580,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 25,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "blade",
+      "name": "Ironbreaker",
+      "health": 101,
+      "damage": 14,
+      "armor": 3,
+      "range": 24,
+      "speed": 65.45,
+      "cooldown": 12,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "polearm",
+      "name": "Hammerguard",
+      "health": 124,
+      "damage": 19,
+      "armor": 5,
+      "range": 34,
+      "speed": 64.6,
+      "cooldown": 17,
+      "radius": 10,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "ranged",
+      "name": "Thunderer",
+      "health": 74,
+      "damage": 17,
+      "armor": 1,
+      "range": 112,
+      "speed": 62.05,
+      "cooldown": 25,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "marksman",
+      "name": "Runebolt Gunner",
+      "health": 92,
+      "damage": 24,
+      "armor": 2,
+      "range": 145,
+      "speed": 54.4,
+      "cooldown": 25,
+      "radius": 10,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "heavy",
+      "name": "Stoneguard",
+      "health": 248,
+      "damage": 34,
+      "armor": 8,
+      "range": 28,
+      "speed": 76.5,
+      "cooldown": 21,
+      "radius": 12,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "vanguard",
+      "name": "Thorin Stoneheart",
+      "health": 431,
+      "damage": 34,
+      "armor": 7,
+      "range": 30,
+      "speed": 69,
+      "cooldown": 18,
+      "radius": 15,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "pathfinder",
+      "name": "Bromm Thunderforge",
+      "health": 297,
+      "damage": 28,
+      "armor": 4,
+      "range": 149,
+      "speed": 72,
+      "cooldown": 18,
+      "radius": 13,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "siege",
+      "name": "Siege Cannon",
+      "health": 205,
+      "damage": 38,
+      "armor": 5,
+      "range": 180,
+      "speed": 36,
+      "cooldown": 39,
+      "radius": 13,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "support",
+      "name": "Support",
+      "health": 88,
+      "damage": 0,
+      "armor": 1,
+      "range": 0,
+      "speed": 75,
+      "cooldown": 0,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "scout",
+      "name": "Tunnel Pathfinder",
+      "health": 48,
+      "damage": 0,
+      "armor": 0,
+      "range": 0,
+      "speed": 128,
+      "cooldown": 0,
+      "radius": 7,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "worker",
+      "name": "Delver",
+      "health": 55,
+      "damage": 0,
+      "armor": 0,
+      "range": 0,
+      "speed": 86,
+      "cooldown": 0,
+      "radius": 8,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "transport",
+      "name": "Armored Ferry",
+      "health": 550,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 100,
+      "cooldown": 0,
+      "radius": 18,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "warship",
+      "name": "Iron Warship",
+      "health": 665,
+      "damage": 35,
+      "armor": 5,
+      "range": 120,
+      "speed": 73.8,
+      "cooldown": 29,
+      "radius": 19,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "headquarters",
+      "name": "Mountain Hall",
+      "health": 1725,
+      "damage": 0,
+      "armor": 6,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 30,
+      "trains": [
+        "worker",
+        "scout",
+        "vanguard",
+        "pathfinder"
+      ]
+    },
+    {
+      "race": "dwarf",
+      "kind": "barracks",
+      "name": "Iron Barracks",
+      "health": 550,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 25,
+      "trains": [
+        "blade",
+        "polearm"
+      ]
+    },
+    {
+      "race": "dwarf",
+      "kind": "range",
+      "name": "Powder Hall",
+      "health": 490,
+      "damage": 0,
+      "armor": 2,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 24,
+      "trains": [
+        "ranged",
+        "marksman"
+      ]
+    },
+    {
+      "race": "dwarf",
+      "kind": "elite",
+      "name": "Foundry",
+      "health": 690,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 27,
+      "trains": [
+        "heavy",
+        "siege"
+      ]
+    },
+    {
+      "race": "dwarf",
+      "kind": "farm",
+      "name": "Deep Mine",
+      "health": 310,
+      "damage": 0,
+      "armor": 1,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 21,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "wall",
+      "name": "Runestone Wall",
+      "health": 432,
+      "damage": 0,
+      "armor": 5,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 16,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "tower",
+      "name": "Stone Bastion",
+      "health": 552,
+      "damage": 20,
+      "armor": 4,
+      "range": 205,
+      "speed": 0,
+      "cooldown": 20,
+      "radius": 17,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "smithy",
+      "name": "Rune Forge",
+      "health": 620,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 24,
+      "trains": []
+    },
+    {
+      "race": "dwarf",
+      "kind": "port",
+      "name": "Iron Dock",
+      "health": 750,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 28,
+      "trains": [
+        "transport",
+        "warship"
+      ]
+    },
+    {
+      "race": "dwarf",
+      "kind": "settlement",
+      "name": "Settlement",
+      "health": 580,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 25,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "blade",
+      "name": "Bladedancer",
+      "health": 82,
+      "damage": 20,
+      "armor": 1,
+      "range": 24,
+      "speed": 84.7,
+      "cooldown": 12,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "polearm",
+      "name": "Thorn Guard",
+      "health": 102,
+      "damage": 19,
+      "armor": 2,
+      "range": 34,
+      "speed": 83.60000000000001,
+      "cooldown": 15,
+      "radius": 10,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "ranged",
+      "name": "Sylvan Archer",
+      "health": 56,
+      "damage": 17,
+      "armor": 1,
+      "range": 140,
+      "speed": 80.30000000000001,
+      "cooldown": 16,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "marksman",
+      "name": "Forest Sentinel",
+      "health": 70,
+      "damage": 27,
+      "armor": 2,
+      "range": 166,
+      "speed": 70.4,
+      "cooldown": 21,
+      "radius": 10,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "heavy",
+      "name": "Grove Warden",
+      "health": 204,
+      "damage": 29,
+      "armor": 4,
+      "range": 28,
+      "speed": 114.4,
+      "cooldown": 18,
+      "radius": 12,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "vanguard",
+      "name": "Faelar Swiftwind",
+      "health": 330,
+      "damage": 41,
+      "armor": 4,
+      "range": 30,
+      "speed": 104,
+      "cooldown": 18,
+      "radius": 15,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "pathfinder",
+      "name": "Aelindra Moonwhisper",
+      "health": 269,
+      "damage": 32,
+      "armor": 4,
+      "range": 165,
+      "speed": 94,
+      "cooldown": 18,
+      "radius": 13,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "siege",
+      "name": "Thorn Ballista",
+      "health": 125,
+      "damage": 25,
+      "armor": 1,
+      "range": 205,
+      "speed": 57,
+      "cooldown": 35,
+      "radius": 13,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "support",
+      "name": "Druid",
+      "health": 66,
+      "damage": 0,
+      "armor": 1,
+      "range": 0,
+      "speed": 94.60000000000001,
+      "cooldown": 0,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "scout",
+      "name": "Woodland Scout",
+      "health": 41,
+      "damage": 0,
+      "armor": 0,
+      "range": 0,
+      "speed": 162.8,
+      "cooldown": 0,
+      "radius": 7,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "worker",
+      "name": "Grove Tender",
+      "health": 55,
+      "damage": 0,
+      "armor": 0,
+      "range": 0,
+      "speed": 86,
+      "cooldown": 0,
+      "radius": 8,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "transport",
+      "name": "Leaf Ferry",
+      "health": 550,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 100,
+      "cooldown": 0,
+      "radius": 18,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "warship",
+      "name": "Grove Warship",
+      "health": 645,
+      "damage": 35,
+      "armor": 5,
+      "range": 120,
+      "speed": 90.2,
+      "cooldown": 28,
+      "radius": 19,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "headquarters",
+      "name": "Ancient Grove",
+      "health": 1500,
+      "damage": 0,
+      "armor": 5,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 30,
+      "trains": [
+        "worker",
+        "scout",
+        "vanguard",
+        "pathfinder"
+      ]
+    },
+    {
+      "race": "elf",
+      "kind": "barracks",
+      "name": "Blade Circle",
+      "health": 550,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 25,
+      "trains": [
+        "blade",
+        "polearm"
+      ]
+    },
+    {
+      "race": "elf",
+      "kind": "range",
+      "name": "Ranger Lodge",
+      "health": 490,
+      "damage": 0,
+      "armor": 2,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 24,
+      "trains": [
+        "ranged",
+        "marksman"
+      ]
+    },
+    {
+      "race": "elf",
+      "kind": "elite",
+      "name": "Moon Sanctuary",
+      "health": 690,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 27,
+      "trains": [
+        "heavy",
+        "support",
+        "siege"
+      ]
+    },
+    {
+      "race": "elf",
+      "kind": "farm",
+      "name": "Sacred Tree",
+      "health": 310,
+      "damage": 0,
+      "armor": 1,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 21,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "wall",
+      "name": "Briar Wall",
+      "health": 324,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 16,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "tower",
+      "name": "Living Watchtower",
+      "health": 414,
+      "damage": 20,
+      "armor": 3,
+      "range": 205,
+      "speed": 0,
+      "cooldown": 20,
+      "radius": 17,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "smithy",
+      "name": "Leafweave Atelier",
+      "health": 620,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 24,
+      "trains": []
+    },
+    {
+      "race": "elf",
+      "kind": "port",
+      "name": "Willow Harbor",
+      "health": 750,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 28,
+      "trains": [
+        "transport",
+        "warship"
+      ]
+    },
+    {
+      "race": "elf",
+      "kind": "settlement",
+      "name": "Settlement",
+      "health": 580,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 25,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "blade",
+      "name": "Skeleton Warrior",
+      "health": 82,
+      "damage": 14,
+      "armor": 2,
+      "range": 24,
+      "speed": 77,
+      "cooldown": 12,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "polearm",
+      "name": "Ghoul",
+      "health": 97,
+      "damage": 15,
+      "armor": 2,
+      "range": 34,
+      "speed": 105,
+      "cooldown": 15,
+      "radius": 10,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "ranged",
+      "name": "Bone Archer",
+      "health": 56,
+      "damage": 13,
+      "armor": 0,
+      "range": 115,
+      "speed": 73,
+      "cooldown": 17,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "marksman",
+      "name": "Grave Marksman",
+      "health": 68,
+      "damage": 24,
+      "armor": 1,
+      "range": 143,
+      "speed": 64,
+      "cooldown": 24,
+      "radius": 10,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "heavy",
+      "name": "Abomination",
+      "health": 295,
+      "damage": 36,
+      "armor": 6,
+      "range": 28,
+      "speed": 57,
+      "cooldown": 23,
+      "radius": 12,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "vanguard",
+      "name": "Vorrak the Deathlord",
+      "health": 403,
+      "damage": 37,
+      "armor": 5,
+      "range": 30,
+      "speed": 86,
+      "cooldown": 18,
+      "radius": 15,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "pathfinder",
+      "name": "Malachar the Lich",
+      "health": 258,
+      "damage": 28,
+      "armor": 4,
+      "range": 146,
+      "speed": 87,
+      "cooldown": 18,
+      "radius": 13,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "siege",
+      "name": "Bone Catapult",
+      "health": 135,
+      "damage": 31,
+      "armor": 1,
+      "range": 190,
+      "speed": 52,
+      "cooldown": 34,
+      "radius": 13,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "support",
+      "name": "Necromancer",
+      "health": 94,
+      "damage": 0,
+      "armor": 1,
+      "range": 0,
+      "speed": 73,
+      "cooldown": 0,
+      "radius": 9,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "scout",
+      "name": "Grave Wisp",
+      "health": 48,
+      "damage": 0,
+      "armor": 0,
+      "range": 0,
+      "speed": 148,
+      "cooldown": 0,
+      "radius": 7,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "worker",
+      "name": "Thrall",
+      "health": 55,
+      "damage": 0,
+      "armor": 0,
+      "range": 0,
+      "speed": 86,
+      "cooldown": 0,
+      "radius": 8,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "transport",
+      "name": "Soul Barge",
+      "health": 550,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 100,
+      "cooldown": 0,
+      "radius": 18,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "warship",
+      "name": "Dread Warship",
+      "health": 615,
+      "damage": 31,
+      "armor": 5,
+      "range": 120,
+      "speed": 82,
+      "cooldown": 28,
+      "radius": 19,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "headquarters",
+      "name": "Necropolis",
+      "health": 1500,
+      "damage": 0,
+      "armor": 5,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 30,
+      "trains": [
+        "worker",
+        "scout",
+        "vanguard",
+        "pathfinder"
+      ]
+    },
+    {
+      "race": "undead",
+      "kind": "barracks",
+      "name": "Crypt",
+      "health": 550,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 25,
+      "trains": [
+        "blade",
+        "polearm",
+        "ranged"
+      ]
+    },
+    {
+      "race": "undead",
+      "kind": "range",
+      "name": "Bone Arsenal",
+      "health": 490,
+      "damage": 0,
+      "armor": 2,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 24,
+      "trains": [
+        "marksman"
+      ]
+    },
+    {
+      "race": "undead",
+      "kind": "elite",
+      "name": "Fleshworks",
+      "health": 690,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 27,
+      "trains": [
+        "heavy",
+        "siege"
+      ]
+    },
+    {
+      "race": "undead",
+      "kind": "farm",
+      "name": "Graveyard",
+      "health": 310,
+      "damage": 0,
+      "armor": 1,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 21,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "wall",
+      "name": "Ossuary Wall",
+      "health": 305,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 16,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "tower",
+      "name": "Bone Spire",
+      "health": 390,
+      "damage": 20,
+      "armor": 3,
+      "range": 205,
+      "speed": 0,
+      "cooldown": 20,
+      "radius": 17,
+      "trains": []
+    },
+    {
+      "race": "undead",
+      "kind": "smithy",
+      "name": "Dark Sanctum",
+      "health": 620,
+      "damage": 0,
+      "armor": 4,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 24,
+      "trains": [
+        "support"
+      ]
+    },
+    {
+      "race": "undead",
+      "kind": "port",
+      "name": "Drowned Pier",
+      "health": 750,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 28,
+      "trains": [
+        "transport",
+        "warship"
+      ]
+    },
+    {
+      "race": "undead",
+      "kind": "settlement",
+      "name": "Settlement",
+      "health": 580,
+      "damage": 0,
+      "armor": 3,
+      "range": 0,
+      "speed": 0,
+      "cooldown": 0,
+      "radius": 25,
+      "trains": []
+    }
+  ],
+  "training": [
+    {
+      "race": "human",
+      "kind": "blade",
+      "gold": 75,
+      "ticks": 95,
+      "population": 1,
+      "cost": {
+        "gold": 75,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "human",
+      "kind": "polearm",
+      "gold": 105,
+      "ticks": 120,
+      "population": 1,
+      "cost": {
+        "gold": 105,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "human",
+      "kind": "ranged",
+      "gold": 90,
+      "ticks": 120,
+      "population": 1,
+      "cost": {
+        "gold": 90,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "human",
+      "kind": "marksman",
+      "gold": 135,
+      "ticks": 145,
+      "population": 1,
+      "cost": {
+        "gold": 135,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "human",
+      "kind": "heavy",
+      "gold": 220,
+      "ticks": 180,
+      "population": 2,
+      "cost": {
+        "gold": 220,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "human",
+      "kind": "vanguard",
+      "gold": 460,
+      "wood": 80,
+      "ticks": 480,
+      "population": 1,
+      "cost": {
+        "gold": 460,
+        "wood": 80,
+        "stone": 0
+      },
+      "hall": 3
+    },
+    {
+      "race": "human",
+      "kind": "pathfinder",
+      "gold": 460,
+      "wood": 80,
+      "ticks": 480,
+      "population": 1,
+      "cost": {
+        "gold": 460,
+        "wood": 80,
+        "stone": 0
+      },
+      "hall": 3
+    },
+    {
+      "race": "human",
+      "kind": "siege",
+      "gold": 245,
+      "wood": 95,
+      "ticks": 230,
+      "population": 2,
+      "cost": {
+        "gold": 245,
+        "wood": 95,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "human",
+      "kind": "support",
+      "gold": 130,
+      "ticks": 155,
+      "population": 1,
+      "cost": {
+        "gold": 130,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "human",
+      "kind": "scout",
+      "gold": 85,
+      "ticks": 110,
+      "population": 1,
+      "cost": {
+        "gold": 85,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "human",
+      "kind": "worker",
+      "gold": 60,
+      "ticks": 95,
+      "population": 1,
+      "cost": {
+        "gold": 60,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "human",
+      "kind": "transport",
+      "gold": 160,
+      "wood": 130,
+      "ticks": 220,
+      "population": 1,
+      "cost": {
+        "gold": 160,
+        "wood": 130,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "human",
+      "kind": "warship",
+      "gold": 230,
+      "wood": 185,
+      "ticks": 270,
+      "population": 2,
+      "cost": {
+        "gold": 230,
+        "wood": 185,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "orc",
+      "kind": "blade",
+      "gold": 75,
+      "ticks": 95,
+      "population": 1,
+      "cost": {
+        "gold": 75,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "orc",
+      "kind": "polearm",
+      "gold": 105,
+      "ticks": 120,
+      "population": 1,
+      "cost": {
+        "gold": 105,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "orc",
+      "kind": "ranged",
+      "gold": 90,
+      "ticks": 120,
+      "population": 1,
+      "cost": {
+        "gold": 90,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "orc",
+      "kind": "marksman",
+      "gold": 135,
+      "ticks": 145,
+      "population": 1,
+      "cost": {
+        "gold": 135,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "orc",
+      "kind": "heavy",
+      "gold": 220,
+      "ticks": 180,
+      "population": 2,
+      "cost": {
+        "gold": 220,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "orc",
+      "kind": "vanguard",
+      "gold": 460,
+      "wood": 80,
+      "ticks": 480,
+      "population": 1,
+      "cost": {
+        "gold": 460,
+        "wood": 80,
+        "stone": 0
+      },
+      "hall": 3
+    },
+    {
+      "race": "orc",
+      "kind": "pathfinder",
+      "gold": 460,
+      "wood": 80,
+      "ticks": 480,
+      "population": 1,
+      "cost": {
+        "gold": 460,
+        "wood": 80,
+        "stone": 0
+      },
+      "hall": 3
+    },
+    {
+      "race": "orc",
+      "kind": "siege",
+      "gold": 245,
+      "wood": 95,
+      "ticks": 230,
+      "population": 2,
+      "cost": {
+        "gold": 245,
+        "wood": 95,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "orc",
+      "kind": "support",
+      "gold": 130,
+      "ticks": 155,
+      "population": 1,
+      "cost": {
+        "gold": 130,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "orc",
+      "kind": "scout",
+      "gold": 85,
+      "ticks": 110,
+      "population": 1,
+      "cost": {
+        "gold": 85,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "orc",
+      "kind": "worker",
+      "gold": 60,
+      "ticks": 95,
+      "population": 1,
+      "cost": {
+        "gold": 60,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "orc",
+      "kind": "transport",
+      "gold": 160,
+      "wood": 130,
+      "ticks": 220,
+      "population": 1,
+      "cost": {
+        "gold": 160,
+        "wood": 130,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "orc",
+      "kind": "warship",
+      "gold": 230,
+      "wood": 185,
+      "ticks": 270,
+      "population": 2,
+      "cost": {
+        "gold": 230,
+        "wood": 185,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "dwarf",
+      "kind": "blade",
+      "gold": 75,
+      "ticks": 95,
+      "population": 1,
+      "cost": {
+        "gold": 75,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "dwarf",
+      "kind": "polearm",
+      "gold": 105,
+      "ticks": 120,
+      "population": 1,
+      "cost": {
+        "gold": 105,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "dwarf",
+      "kind": "ranged",
+      "gold": 90,
+      "ticks": 120,
+      "population": 1,
+      "cost": {
+        "gold": 90,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "dwarf",
+      "kind": "marksman",
+      "gold": 135,
+      "ticks": 145,
+      "population": 1,
+      "cost": {
+        "gold": 135,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "dwarf",
+      "kind": "heavy",
+      "gold": 253,
+      "ticks": 180,
+      "population": 2,
+      "cost": {
+        "gold": 253,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "dwarf",
+      "kind": "vanguard",
+      "gold": 460,
+      "wood": 80,
+      "ticks": 480,
+      "population": 1,
+      "cost": {
+        "gold": 460,
+        "wood": 80,
+        "stone": 0
+      },
+      "hall": 3
+    },
+    {
+      "race": "dwarf",
+      "kind": "pathfinder",
+      "gold": 460,
+      "wood": 80,
+      "ticks": 480,
+      "population": 1,
+      "cost": {
+        "gold": 460,
+        "wood": 80,
+        "stone": 0
+      },
+      "hall": 3
+    },
+    {
+      "race": "dwarf",
+      "kind": "siege",
+      "gold": 245,
+      "wood": 95,
+      "ticks": 230,
+      "population": 2,
+      "cost": {
+        "gold": 245,
+        "wood": 95,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "dwarf",
+      "kind": "support",
+      "gold": 130,
+      "ticks": 155,
+      "population": 1,
+      "cost": {
+        "gold": 130,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "dwarf",
+      "kind": "scout",
+      "gold": 85,
+      "ticks": 110,
+      "population": 1,
+      "cost": {
+        "gold": 85,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "dwarf",
+      "kind": "worker",
+      "gold": 60,
+      "ticks": 95,
+      "population": 1,
+      "cost": {
+        "gold": 60,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "dwarf",
+      "kind": "transport",
+      "gold": 160,
+      "wood": 130,
+      "ticks": 220,
+      "population": 1,
+      "cost": {
+        "gold": 160,
+        "wood": 130,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "dwarf",
+      "kind": "warship",
+      "gold": 230,
+      "wood": 185,
+      "ticks": 270,
+      "population": 2,
+      "cost": {
+        "gold": 230,
+        "wood": 185,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "elf",
+      "kind": "blade",
+      "gold": 75,
+      "ticks": 95,
+      "population": 1,
+      "cost": {
+        "gold": 75,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "elf",
+      "kind": "polearm",
+      "gold": 105,
+      "ticks": 120,
+      "population": 1,
+      "cost": {
+        "gold": 105,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "elf",
+      "kind": "ranged",
+      "gold": 90,
+      "ticks": 120,
+      "population": 1,
+      "cost": {
+        "gold": 90,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "elf",
+      "kind": "marksman",
+      "gold": 150,
+      "ticks": 145,
+      "population": 1,
+      "cost": {
+        "gold": 150,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "elf",
+      "kind": "heavy",
+      "gold": 255,
+      "ticks": 180,
+      "population": 2,
+      "cost": {
+        "gold": 255,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "elf",
+      "kind": "vanguard",
+      "gold": 460,
+      "wood": 80,
+      "ticks": 480,
+      "population": 1,
+      "cost": {
+        "gold": 460,
+        "wood": 80,
+        "stone": 0
+      },
+      "hall": 3
+    },
+    {
+      "race": "elf",
+      "kind": "pathfinder",
+      "gold": 460,
+      "wood": 80,
+      "ticks": 480,
+      "population": 1,
+      "cost": {
+        "gold": 460,
+        "wood": 80,
+        "stone": 0
+      },
+      "hall": 3
+    },
+    {
+      "race": "elf",
+      "kind": "siege",
+      "gold": 245,
+      "wood": 95,
+      "ticks": 230,
+      "population": 2,
+      "cost": {
+        "gold": 245,
+        "wood": 95,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "elf",
+      "kind": "support",
+      "gold": 130,
+      "ticks": 155,
+      "population": 1,
+      "cost": {
+        "gold": 130,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "elf",
+      "kind": "scout",
+      "gold": 85,
+      "ticks": 110,
+      "population": 1,
+      "cost": {
+        "gold": 85,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "elf",
+      "kind": "worker",
+      "gold": 60,
+      "ticks": 95,
+      "population": 1,
+      "cost": {
+        "gold": 60,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "elf",
+      "kind": "transport",
+      "gold": 160,
+      "wood": 130,
+      "ticks": 220,
+      "population": 1,
+      "cost": {
+        "gold": 160,
+        "wood": 130,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "elf",
+      "kind": "warship",
+      "gold": 230,
+      "wood": 185,
+      "ticks": 270,
+      "population": 2,
+      "cost": {
+        "gold": 230,
+        "wood": 185,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "undead",
+      "kind": "blade",
+      "gold": 60,
+      "ticks": 76,
+      "population": 1,
+      "cost": {
+        "gold": 60,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "undead",
+      "kind": "polearm",
+      "gold": 105,
+      "ticks": 120,
+      "population": 1,
+      "cost": {
+        "gold": 105,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "undead",
+      "kind": "ranged",
+      "gold": 72,
+      "ticks": 96,
+      "population": 1,
+      "cost": {
+        "gold": 72,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "undead",
+      "kind": "marksman",
+      "gold": 135,
+      "ticks": 145,
+      "population": 1,
+      "cost": {
+        "gold": 135,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "undead",
+      "kind": "heavy",
+      "gold": 220,
+      "ticks": 180,
+      "population": 2,
+      "cost": {
+        "gold": 220,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "undead",
+      "kind": "vanguard",
+      "gold": 460,
+      "wood": 80,
+      "ticks": 480,
+      "population": 1,
+      "cost": {
+        "gold": 460,
+        "wood": 80,
+        "stone": 0
+      },
+      "hall": 3
+    },
+    {
+      "race": "undead",
+      "kind": "pathfinder",
+      "gold": 460,
+      "wood": 80,
+      "ticks": 480,
+      "population": 1,
+      "cost": {
+        "gold": 460,
+        "wood": 80,
+        "stone": 0
+      },
+      "hall": 3
+    },
+    {
+      "race": "undead",
+      "kind": "siege",
+      "gold": 245,
+      "wood": 95,
+      "ticks": 230,
+      "population": 2,
+      "cost": {
+        "gold": 245,
+        "wood": 95,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "undead",
+      "kind": "support",
+      "gold": 130,
+      "ticks": 155,
+      "population": 1,
+      "cost": {
+        "gold": 130,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "undead",
+      "kind": "scout",
+      "gold": 85,
+      "ticks": 110,
+      "population": 1,
+      "cost": {
+        "gold": 85,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "undead",
+      "kind": "worker",
+      "gold": 60,
+      "ticks": 95,
+      "population": 1,
+      "cost": {
+        "gold": 60,
+        "wood": 0,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "undead",
+      "kind": "transport",
+      "gold": 160,
+      "wood": 130,
+      "ticks": 220,
+      "population": 1,
+      "cost": {
+        "gold": 160,
+        "wood": 130,
+        "stone": 0
+      },
+      "hall": 1
+    },
+    {
+      "race": "undead",
+      "kind": "warship",
+      "gold": 207,
+      "wood": 167,
+      "ticks": 270,
+      "population": 2,
+      "cost": {
+        "gold": 207,
+        "wood": 167,
+        "stone": 0
+      },
+      "hall": 1
+    }
+  ],
+  "buildings": [
+    {
+      "kind": "barracks",
+      "cost": {
+        "gold": 0,
+        "wood": 90,
+        "stone": 45
+      },
+      "ticks": 140,
+      "hall": 1,
+      "footprint": 20,
+      "repairCost": {
+        "gold": 0,
+        "wood": 1,
+        "stone": 1
+      }
+    },
+    {
+      "kind": "range",
+      "cost": {
+        "gold": 0,
+        "wood": 100,
+        "stone": 40
+      },
+      "ticks": 155,
+      "hall": 2,
+      "footprint": 19,
+      "repairCost": {
+        "gold": 0,
+        "wood": 1,
+        "stone": 1
+      }
+    },
+    {
+      "kind": "elite",
+      "cost": {
+        "gold": 0,
+        "wood": 135,
+        "stone": 100
+      },
+      "ticks": 180,
+      "hall": 3,
+      "footprint": 21,
+      "repairCost": {
+        "gold": 0,
+        "wood": 1,
+        "stone": 1
+      }
+    },
+    {
+      "kind": "farm",
+      "cost": {
+        "gold": 0,
+        "wood": 70,
+        "stone": 20
+      },
+      "ticks": 100,
+      "hall": 1,
+      "footprint": 16,
+      "repairCost": {
+        "gold": 0,
+        "wood": 1,
+        "stone": 1
+      }
+    },
+    {
+      "kind": "wall",
+      "cost": {
+        "gold": 0,
+        "wood": 0,
+        "stone": 28
+      },
+      "ticks": 55,
+      "hall": 1,
+      "footprint": 14,
+      "repairCost": {
+        "gold": 0,
+        "wood": 0,
+        "stone": 1
+      }
+    },
+    {
+      "kind": "tower",
+      "cost": {
+        "gold": 0,
+        "wood": 55,
+        "stone": 85
+      },
+      "ticks": 145,
+      "hall": 2,
+      "footprint": 13,
+      "repairCost": {
+        "gold": 0,
+        "wood": 1,
+        "stone": 1
+      }
+    },
+    {
+      "kind": "smithy",
+      "cost": {
+        "gold": 0,
+        "wood": 105,
+        "stone": 65
+      },
+      "ticks": 150,
+      "hall": 1,
+      "footprint": 19,
+      "repairCost": {
+        "gold": 0,
+        "wood": 1,
+        "stone": 1
+      }
+    },
+    {
+      "kind": "port",
+      "cost": {
+        "gold": 0,
+        "wood": 145,
+        "stone": 80
+      },
+      "ticks": 170,
+      "hall": 3,
+      "footprint": 22,
+      "repairCost": {
+        "gold": 0,
+        "wood": 1,
+        "stone": 1
+      }
+    },
+    {
+      "kind": "settlement",
+      "cost": {
+        "gold": 0,
+        "wood": 150,
+        "stone": 75
+      },
+      "ticks": 160,
+      "hall": 1,
+      "footprint": 20,
+      "repairCost": {
+        "gold": 0,
+        "wood": 1,
+        "stone": 1
+      }
+    }
+  ],
+  "research": [
+    {
+      "kind": "weapons",
+      "level": 1,
+      "name": "Weapons +2 damage",
+      "bonus": 2,
+      "cost": {
+        "gold": 85,
+        "wood": 23,
+        "stone": 0
+      },
+      "ticks": 240,
+      "legacyTicks": 240,
+      "hall": 1,
+      "producer": "smithy"
+    },
+    {
+      "kind": "weapons",
+      "level": 2,
+      "name": "Weapons +2 damage",
+      "bonus": 2,
+      "cost": {
+        "gold": 255,
+        "wood": 69,
+        "stone": 0
+      },
+      "ticks": 324,
+      "legacyTicks": 240,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "weapons",
+      "level": 3,
+      "name": "Weapons +2 damage",
+      "bonus": 2,
+      "cost": {
+        "gold": 765,
+        "wood": 207,
+        "stone": 0
+      },
+      "ticks": 408,
+      "legacyTicks": 240,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "weapons",
+      "level": 4,
+      "name": "Weapons +2 damage",
+      "bonus": 2,
+      "cost": {
+        "gold": 2295,
+        "wood": 621,
+        "stone": 0
+      },
+      "ticks": 492,
+      "legacyTicks": 240,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "weapons",
+      "level": 5,
+      "name": "Weapons +2 damage",
+      "bonus": 2,
+      "cost": {
+        "gold": 6885,
+        "wood": 1863,
+        "stone": 0
+      },
+      "ticks": 576,
+      "legacyTicks": 240,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "armor",
+      "level": 1,
+      "name": "Armor +1 defense",
+      "bonus": 1,
+      "cost": {
+        "gold": 65,
+        "wood": 0,
+        "stone": 30
+      },
+      "ticks": 220,
+      "legacyTicks": 220,
+      "hall": 1,
+      "producer": "smithy"
+    },
+    {
+      "kind": "armor",
+      "level": 2,
+      "name": "Armor +1 defense",
+      "bonus": 1,
+      "cost": {
+        "gold": 195,
+        "wood": 0,
+        "stone": 90
+      },
+      "ticks": 297,
+      "legacyTicks": 220,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "armor",
+      "level": 3,
+      "name": "Armor +1 defense",
+      "bonus": 1,
+      "cost": {
+        "gold": 585,
+        "wood": 0,
+        "stone": 270
+      },
+      "ticks": 374,
+      "legacyTicks": 220,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "armor",
+      "level": 4,
+      "name": "Armor +1 defense",
+      "bonus": 1,
+      "cost": {
+        "gold": 1755,
+        "wood": 0,
+        "stone": 810
+      },
+      "ticks": 451,
+      "legacyTicks": 220,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "armor",
+      "level": 5,
+      "name": "Armor +1 defense",
+      "bonus": 1,
+      "cost": {
+        "gold": 5265,
+        "wood": 0,
+        "stone": 2430
+      },
+      "ticks": 528,
+      "legacyTicks": 220,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "precision",
+      "level": 1,
+      "name": "Ranged precision +2 damage",
+      "bonus": 2,
+      "cost": {
+        "gold": 78,
+        "wood": 38,
+        "stone": 0
+      },
+      "ticks": 250,
+      "legacyTicks": 250,
+      "hall": 1,
+      "producer": "smithy"
+    },
+    {
+      "kind": "precision",
+      "level": 2,
+      "name": "Ranged precision +2 damage",
+      "bonus": 2,
+      "cost": {
+        "gold": 234,
+        "wood": 114,
+        "stone": 0
+      },
+      "ticks": 338,
+      "legacyTicks": 250,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "precision",
+      "level": 3,
+      "name": "Ranged precision +2 damage",
+      "bonus": 2,
+      "cost": {
+        "gold": 702,
+        "wood": 342,
+        "stone": 0
+      },
+      "ticks": 425,
+      "legacyTicks": 250,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "precision",
+      "level": 4,
+      "name": "Ranged precision +2 damage",
+      "bonus": 2,
+      "cost": {
+        "gold": 2106,
+        "wood": 1026,
+        "stone": 0
+      },
+      "ticks": 513,
+      "legacyTicks": 250,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "precision",
+      "level": 5,
+      "name": "Ranged precision +2 damage",
+      "bonus": 2,
+      "cost": {
+        "gold": 6318,
+        "wood": 3078,
+        "stone": 0
+      },
+      "ticks": 600,
+      "legacyTicks": 250,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "vitality",
+      "level": 1,
+      "name": "Troop vitality +12 HP",
+      "bonus": 12,
+      "cost": {
+        "gold": 73,
+        "wood": 0,
+        "stone": 28
+      },
+      "ticks": 250,
+      "legacyTicks": 250,
+      "hall": 1,
+      "producer": "smithy"
+    },
+    {
+      "kind": "vitality",
+      "level": 2,
+      "name": "Troop vitality +12 HP",
+      "bonus": 12,
+      "cost": {
+        "gold": 219,
+        "wood": 0,
+        "stone": 84
+      },
+      "ticks": 338,
+      "legacyTicks": 250,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "vitality",
+      "level": 3,
+      "name": "Troop vitality +12 HP",
+      "bonus": 12,
+      "cost": {
+        "gold": 657,
+        "wood": 0,
+        "stone": 252
+      },
+      "ticks": 425,
+      "legacyTicks": 250,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "vitality",
+      "level": 4,
+      "name": "Troop vitality +12 HP",
+      "bonus": 12,
+      "cost": {
+        "gold": 1971,
+        "wood": 0,
+        "stone": 756
+      },
+      "ticks": 513,
+      "legacyTicks": 250,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "vitality",
+      "level": 5,
+      "name": "Troop vitality +12 HP",
+      "bonus": 12,
+      "cost": {
+        "gold": 5913,
+        "wood": 0,
+        "stone": 2268
+      },
+      "ticks": 600,
+      "legacyTicks": 250,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "range",
+      "level": 1,
+      "name": "Ranged reach +12 range",
+      "bonus": 12,
+      "cost": {
+        "gold": 85,
+        "wood": 45,
+        "stone": 0
+      },
+      "ticks": 270,
+      "legacyTicks": 270,
+      "hall": 1,
+      "producer": "smithy"
+    },
+    {
+      "kind": "range",
+      "level": 2,
+      "name": "Ranged reach +12 range",
+      "bonus": 12,
+      "cost": {
+        "gold": 255,
+        "wood": 135,
+        "stone": 0
+      },
+      "ticks": 365,
+      "legacyTicks": 270,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "range",
+      "level": 3,
+      "name": "Ranged reach +12 range",
+      "bonus": 12,
+      "cost": {
+        "gold": 765,
+        "wood": 405,
+        "stone": 0
+      },
+      "ticks": 459,
+      "legacyTicks": 270,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "range",
+      "level": 4,
+      "name": "Ranged reach +12 range",
+      "bonus": 12,
+      "cost": {
+        "gold": 2295,
+        "wood": 1215,
+        "stone": 0
+      },
+      "ticks": 554,
+      "legacyTicks": 270,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "range",
+      "level": 5,
+      "name": "Ranged reach +12 range",
+      "bonus": 12,
+      "cost": {
+        "gold": 6885,
+        "wood": 3645,
+        "stone": 0
+      },
+      "ticks": 648,
+      "legacyTicks": 270,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "speed",
+      "level": 1,
+      "name": "Troop speed +5%",
+      "bonus": 5,
+      "cost": {
+        "gold": 83,
+        "wood": 33,
+        "stone": 0
+      },
+      "ticks": 250,
+      "legacyTicks": 250,
+      "hall": 1,
+      "producer": "smithy"
+    },
+    {
+      "kind": "speed",
+      "level": 2,
+      "name": "Troop speed +5%",
+      "bonus": 5,
+      "cost": {
+        "gold": 249,
+        "wood": 99,
+        "stone": 0
+      },
+      "ticks": 338,
+      "legacyTicks": 250,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "speed",
+      "level": 3,
+      "name": "Troop speed +5%",
+      "bonus": 5,
+      "cost": {
+        "gold": 747,
+        "wood": 297,
+        "stone": 0
+      },
+      "ticks": 425,
+      "legacyTicks": 250,
+      "hall": 2,
+      "producer": "smithy"
+    },
+    {
+      "kind": "speed",
+      "level": 4,
+      "name": "Troop speed +5%",
+      "bonus": 5,
+      "cost": {
+        "gold": 2241,
+        "wood": 891,
+        "stone": 0
+      },
+      "ticks": 513,
+      "legacyTicks": 250,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "speed",
+      "level": 5,
+      "name": "Troop speed +5%",
+      "bonus": 5,
+      "cost": {
+        "gold": 6723,
+        "wood": 2673,
+        "stone": 0
+      },
+      "ticks": 600,
+      "legacyTicks": 250,
+      "hall": 3,
+      "producer": "smithy"
+    },
+    {
+      "kind": "fortress",
+      "level": 1,
+      "name": "Fortress Engineering +12% defensive HP",
+      "bonus": 12,
+      "cost": {
+        "gold": 150,
+        "wood": 0,
+        "stone": 115
+      },
+      "ticks": 280,
+      "legacyTicks": 280,
+      "hall": 1,
+      "producer": "elite"
+    }
+  ],
+  "structures": [
+    {
+      "kind": "tower",
+      "targetLevel": 2,
+      "cost": {
+        "gold": 90,
+        "wood": 60,
+        "stone": 100
+      },
+      "ticks": 145,
+      "bulkCost": {
+        "gold": 108,
+        "wood": 72,
+        "stone": 120
+      }
+    },
+    {
+      "kind": "tower",
+      "targetLevel": 3,
+      "cost": {
+        "gold": 135,
+        "wood": 90,
+        "stone": 150
+      },
+      "ticks": 180,
+      "bulkCost": {
+        "gold": 162,
+        "wood": 108,
+        "stone": 180
+      }
+    },
+    {
+      "kind": "tower",
+      "targetLevel": 4,
+      "cost": {
+        "gold": 180,
+        "wood": 120,
+        "stone": 200
+      },
+      "ticks": 215,
+      "bulkCost": {
+        "gold": 216,
+        "wood": 144,
+        "stone": 240
+      }
+    },
+    {
+      "kind": "tower",
+      "targetLevel": 5,
+      "cost": {
+        "gold": 225,
+        "wood": 150,
+        "stone": 250
+      },
+      "ticks": 250,
+      "bulkCost": {
+        "gold": 270,
+        "wood": 180,
+        "stone": 300
+      }
+    },
+    {
+      "kind": "wall",
+      "targetLevel": 2,
+      "cost": {
+        "gold": 0,
+        "wood": 30,
+        "stone": 130
+      },
+      "ticks": 145,
+      "bulkCost": {
+        "gold": 0,
+        "wood": 36,
+        "stone": 156
+      }
+    },
+    {
+      "kind": "wall",
+      "targetLevel": 3,
+      "cost": {
+        "gold": 0,
+        "wood": 45,
+        "stone": 195
+      },
+      "ticks": 180,
+      "bulkCost": {
+        "gold": 0,
+        "wood": 54,
+        "stone": 234
+      }
+    },
+    {
+      "kind": "wall",
+      "targetLevel": 4,
+      "cost": {
+        "gold": 0,
+        "wood": 60,
+        "stone": 260
+      },
+      "ticks": 215,
+      "bulkCost": {
+        "gold": 0,
+        "wood": 72,
+        "stone": 312
+      }
+    },
+    {
+      "kind": "wall",
+      "targetLevel": 5,
+      "cost": {
+        "gold": 0,
+        "wood": 75,
+        "stone": 325
+      },
+      "ticks": 250,
+      "bulkCost": {
+        "gold": 0,
+        "wood": 90,
+        "stone": 390
+      }
+    }
+  ],
+  "hall": [
+    {
+      "level": 2,
+      "required": [
+        "barracks",
+        "smithy"
+      ],
+      "cost": {
+        "gold": 240,
+        "wood": 150,
+        "stone": 70
+      },
+      "ticks": 480
+    },
+    {
+      "level": 3,
+      "required": [
+        "range",
+        "tower"
+      ],
+      "cost": {
+        "gold": 480,
+        "wood": 280,
+        "stone": 150
+      },
+      "ticks": 880
+    }
+  ],
+  "raceRules": {
+    "human": {
+      "description": "Flexible infantry and ranged formations.",
+      "production": {
+        "elite": [
+          "heavy",
+          "siege"
+        ]
+      }
+    },
+    "orc": {
+      "description": "Strong frontline and fast ranged attacks.",
+      "production": {
+        "elite": [
+          "heavy",
+          "siege"
+        ]
+      }
+    },
+    "dwarf": {
+      "description": "Armored infantry, fortress defenses and siege. Slow to take ground.",
+      "production": {
+        "elite": [
+          "heavy",
+          "siege"
+        ]
+      },
+      "stoneYield": 1.15,
+      "training": {
+        "heavy": {
+          "gold": 253
+        }
+      },
+      "defense": {
+        "tower": 1.12,
+        "wall": 1.12
+      }
+    },
+    "elf": {
+      "description": "Mobile archers, forest ambush and healing. Fragile in a prolonged fight.",
+      "production": {
+        "elite": [
+          "heavy",
+          "support",
+          "siege"
+        ]
+      },
+      "scoutSight": 1.1,
+      "ambush": [
+        "blade",
+        "ranged",
+        "marksman"
+      ],
+      "training": {
+        "heavy": {
+          "gold": 255
+        },
+        "marksman": {
+          "gold": 150
+        }
+      }
+    },
+    "undead": {
+      "description": "Cheap skeletons and corpse magic. Weak defenses and slower gathering.",
+      "gathering": 0.9,
+      "production": {
+        "barracks": [
+          "blade",
+          "polearm",
+          "ranged"
+        ],
+        "range": [
+          "marksman"
+        ],
+        "elite": [
+          "heavy",
+          "siege"
+        ],
+        "smithy": [
+          "support"
+        ]
+      },
+      "training": {
+        "blade": {
+          "gold": 60,
+          "ticks": 76
+        },
+        "ranged": {
+          "gold": 72,
+          "ticks": 96
+        },
+        "warship": {
+          "gold": 207,
+          "wood": 167
+        }
+      }
+    }
+  },
+  "raceSkills": {
+    "dwarf": {
+      "heavy": {
+        "name": "Shield Wall",
+        "description": "Reduce incoming damage by 30% for 5 seconds.",
+        "cooldown": 300,
+        "radius": 0,
+        "duration": 100,
+        "bonus": 0.3
+      },
+      "vanguard": {
+        "name": "Stoneheart Aura",
+        "description": "+3 armor for allies nearby for 6 seconds.",
+        "cooldown": 300,
+        "radius": 128,
+        "duration": 120,
+        "bonus": 3
+      },
+      "pathfinder": {
+        "name": "Siege Command",
+        "description": "Nearby siege cannons gain +12 building damage for 7 seconds.",
+        "cooldown": 320,
+        "radius": 152,
+        "duration": 140,
+        "bonus": 12
+      }
+    },
+    "elf": {
+      "marksman": {
+        "name": "Steady Aim",
+        "description": "+3 attack damage for 5 seconds.",
+        "cooldown": 300,
+        "radius": 0,
+        "duration": 100,
+        "bonus": 3
+      },
+      "support": {
+        "name": "Mend",
+        "description": "Restore up to 25 HP to each of three wounded allies.",
+        "cooldown": 280,
+        "radius": 112,
+        "bonus": 25
+      },
+      "pathfinder": {
+        "name": "Moonshot",
+        "description": "+5 attack damage and +24 range for 6 seconds.",
+        "cooldown": 300,
+        "radius": 0,
+        "duration": 120,
+        "bonus": 5
+      },
+      "vanguard": {
+        "name": "Windstride",
+        "description": "Nearby troops move 20% faster for 5 seconds.",
+        "cooldown": 280,
+        "radius": 128,
+        "duration": 100,
+        "bonus": 0.2
+      }
+    },
+    "undead": {
+      "support": {
+        "name": "Raise the Fallen",
+        "description": "Raise one nearby corpse into a temporary skeleton.",
+        "cooldown": 240,
+        "radius": 125,
+        "bonus": 1
+      },
+      "pathfinder": {
+        "name": "Grave Chill",
+        "description": "Strike up to three visible enemies with frost.",
+        "cooldown": 260,
+        "radius": 115,
+        "bonus": 28
+      },
+      "vanguard": {
+        "name": "Grave Might",
+        "description": "+5 damage for 5 seconds. Kills restore 18 HP.",
+        "cooldown": 280,
+        "radius": 0,
+        "duration": 100,
+        "bonus": 5
+      }
+    }
+  },
+  "heroAbilities": {
+    "vanguard": {
+      "name": "War Cry",
+      "passive": "Iron Will: 2 less damage taken",
+      "cooldown": 260,
+      "radius": 112,
+      "duration": 120,
+      "bonus": 8
+    },
+    "pathfinder": {
+      "name": "Arrow Storm",
+      "passive": "Deadeye: +5 attack damage",
+      "cooldown": 220,
+      "radius": 108,
+      "duration": 0,
+      "bonus": 24,
+      "maxTargets": 6
+    }
+  },
+  "heroThresholds": [
+    0,
+    60,
+    140,
+    240,
+    360
+  ],
+  "heroHealthPerLevel": 26,
+  "heroDamagePerLevel": 4,
+  "gathering": {
+    "gold": {
+      "amount": 30,
+      "ticks": 28
+    },
+    "wood": {
+      "amount": 35,
+      "ticks": 24
+    },
+    "stone": {
+      "amount": 25,
+      "ticks": 32
+    }
+  },
+  "repair": {
+    "health": 20,
+    "ticks": 14
+  },
+  "siege": {
+    "structureRange": 211,
+    "structureBonus": 16,
+    "unitPenalty": 4
+  },
+  "defaults": {
+    "map": "ashford-expanded",
+    "randomStarts": true,
+    "sources": {
+      "gold": {
+        "count": 7,
+        "stock": null,
+        "workers": 5
+      },
+      "stone": {
+        "count": 7,
+        "stock": null,
+        "workers": 5
+      },
+      "wood": {
+        "count": 1242,
+        "stock": null,
+        "workers": null
+      }
+    },
+    "starting": {
+      "gold": 300,
+      "wood": 180,
+      "stone": 120
+    },
+    "minutes": null,
+    "populationCap": 500
+  },
+  "basePopulation": 10,
+  "farmPopulation": 10,
+  "cap": 2000,
+  "maxSelection": 1000,
+  "maxGroups": 8,
+  "maxGroupSize": 500,
+  "control": {
+    "radius": 96,
+    "score": 180
+  },
+  "limits": {
+    "deposits": 24,
+    "starting": 100000,
+    "stock": 1000000,
+    "workers": 100,
+    "minutes": 720
+  }
+}

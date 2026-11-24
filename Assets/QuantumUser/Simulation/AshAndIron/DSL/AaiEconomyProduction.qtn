@@ -1,0 +1,67 @@
+component AaiResourceNode {
+  AaiResource Kind;
+  Int32 CellIndex;
+  bool UnlimitedStock;
+  Int32 Remaining;
+  bool UnlimitedWorkers;
+  Int32 MaxActiveWorkers;
+  Int32 ActiveWorkers;
+}
+
+component AaiWorker {
+  AaiJob Job;
+  AaiResource Resource;
+  Int32 CargoAmount;
+  Int32 WorkTicks;
+  entity_ref ResourceTarget;
+  entity_ref DropOffTarget;
+  entity_ref ConstructionTarget;
+  entity_ref RepairTarget;
+  bool WorkBuildQueue;
+}
+
+component AaiWorkerBuildQueue {
+  [AllocateOnComponentAdded, FreeOnComponentRemoved] list<entity_ref> Sites;
+}
+
+component AaiBuilding {
+  AaiConstructionState Construction;
+  Int32 BuildTicks;
+  Int32 BuildDuration;
+  Byte Level;
+  Int32 PopulationContribution;
+  bool IsDropOff;
+}
+
+component AaiRallyPoint {
+  bool Active;
+  FPVector2 Destination;
+}
+
+struct AaiTrainingRun {
+  AaiKind Kind;
+  Int32 RemainingCount;
+  Int32 TicksLeft;
+  AaiResources PaidPerUnit;
+  Int32 ReservedPopulationPerUnit;
+}
+
+component AaiProduction {
+  [AllocateOnComponentAdded, FreeOnComponentRemoved] list<AaiTrainingRun> Queue;
+  Int32 Revision;
+}
+
+component AaiResearchJob {
+  AaiResearchKind Kind;
+  Byte TargetLevel;
+  Int32 TicksLeft;
+  Int32 TotalTicks;
+  AaiResources Paid;
+}
+
+component AaiStructureUpgrade {
+  Byte TargetLevel;
+  Int32 TicksLeft;
+  Int32 TotalTicks;
+  AaiResources Paid;
+}

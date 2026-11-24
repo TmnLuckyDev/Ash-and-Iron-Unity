@@ -1,0 +1,49 @@
+// Ash & Iron schema v1. Stable enum IDs; append, never reorder.
+enum AaiRace : Byte { Human = 0, Orc = 1, Dwarf = 2, Elf = 3, Undead = 4 }
+enum AaiSeat : Byte { None = 0, One = 1, Two = 2 }
+enum AaiKind : Byte {
+  Blade = 0, Polearm = 1, Ranged = 2, Marksman = 3, Heavy = 4,
+  Vanguard = 5, Pathfinder = 6, Siege = 7, Support = 8, Scout = 9,
+  Worker = 10, Transport = 11, Warship = 12, Headquarters = 13,
+  Barracks = 14, Range = 15, Elite = 16, Farm = 17, Wall = 18,
+  Tower = 19, Smithy = 20, Port = 21, Settlement = 22
+}
+enum AaiResource : Byte { Gold = 0, Wood = 1, Stone = 2 }
+enum AaiResearchKind : Byte { Weapons = 0, Armor = 1, Precision = 2, Vitality = 3, Range = 4, Speed = 5, Fortress = 6 }
+enum AaiMode : Byte { Classic = 0, ControlPoints = 1 }
+enum AaiDifficulty : Byte { Easy = 0, Normal = 1, Hard = 2 }
+enum AaiStrategy : Byte { Balanced = 0, Rush = 1, Defensive = 2, Counter = 3, Expansion = 4 }
+enum AaiTerrain : Byte { Grass = 0, Road = 1, Forest = 2, Water = 3, Rock = 4, Bridge = 5, Mine = 6, Quarry = 7 }
+enum AaiFormation : Byte { Line = 0, Compact = 1, Spread = 2 }
+enum AaiUnitState : Byte {
+  Idle = 0, Moving = 1, Attacking = 2, AttackMoving = 3, Gathering = 4,
+  ReturningResources = 5, Building = 6, Repairing = 7, Exploring = 8, Embarked = 9,
+  Patrolling = 10, Guarding = 11, HoldingPosition = 12, Retreating = 13
+}
+// Extended player orders and stances are planned; baseline mode keeps current behavior.
+enum AaiOrderKind : Byte {
+  None = 0, Move = 1, Attack = 2, AttackMove = 3, Stop = 4,
+  Gather = 5, Build = 6, Repair = 7, Explore = 8, Board = 9,
+  Unload = 10, Transfer = 11, Patrol = 12, Hold = 13, Guard = 14, Retreat = 15
+}
+enum AaiStance : Byte { Baseline = 0, Aggressive = 1, Defensive = 2, Passive = 3 }
+enum AaiAttackPriority : Byte { Baseline = 0, Nearest = 1, Units = 2, Structures = 3, Ranged = 4 }
+enum AaiConstructionState : Byte { Complete = 0, Queued = 1, Building = 2, Paused = 3 }
+enum AaiResult : Byte { Playing = 0, Headquarters = 1, Disconnect = 2, Time = 3, Control = 4 }
+enum AaiJob : Byte { None = 0, Gather = 1, Construct = 2, Repair = 3 }
+enum AaiNavDomain : Byte { Land = 0, Water = 1 }
+
+struct AaiResources {
+  Int32 Gold;
+  Int32 Wood;
+  Int32 Stone;
+}
+
+struct AaiOrderData {
+  AaiOrderKind Kind;
+  FPVector2 Destination;
+  entity_ref Target;
+  AaiFormation Formation;
+  AaiKind BuildKind;
+  bool HasDestination;
+}

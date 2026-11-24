@@ -1,0 +1,83 @@
+// Transform2D is supplied by Quantum. Unity presentation is on XZ.
+component AaiIdentity {
+  entity_ref Owner;
+  AaiKind Kind;
+  AaiRace Race;
+}
+
+component AaiHealth {
+  Int32 Current;
+  Int32 Maximum;
+  Int32 LastDamageTick;
+}
+
+component AaiUnit {
+  AaiUnitState State;
+  AaiStance Stance;
+  AaiAttackPriority AttackPriority;
+  AaiOrderData Order;
+}
+
+component AaiCombat {
+  entity_ref Target;
+  entity_ref DefenseTarget;
+  FPVector2 DefenseOrigin;
+  Int32 DefenseUntilTick;
+  Int32 NextAttackTick;
+  Int32 ArmorModifier;
+  Int32 DamageModifier;
+  FP RangeModifier;
+}
+
+component AaiMovement {
+  FPVector2 Destination;
+  FPVector2 AssignedSlot;
+  FPVector2 PursuedDestination;
+  FP SpeedModifier;
+  bool HasDestination;
+  AaiNavDomain Domain;
+  Int32 NextRouteTick;
+  Int32 RouteRevision;
+  Int32 BlockedTicks;
+}
+
+// Attach only while using a path/extended order queue. Each list has one owner.
+component AaiPath {
+  [AllocateOnComponentAdded, FreeOnComponentRemoved] list<FPVector2> Waypoints;
+  Int32 NextWaypoint;
+}
+
+component AaiQueuedOrders {
+  [AllocateOnComponentAdded, FreeOnComponentRemoved] list<AaiOrderData> Orders;
+}
+
+component AaiVisibility {
+  Int32 SightTenths;
+  Int32 LastCellIndex;
+  Int32 LastSightTenths;
+  bool StampActive;
+  bool Concealed;
+  Int32 RevealedUntilTick;
+}
+
+component AaiProjectile {
+  entity_ref Source;
+  entity_ref Owner;
+  entity_ref Target;
+  AaiKind SourceKind;
+  AaiRace SourceRace;
+  FPVector2 Origin;
+  FPVector2 LastSourcePosition;
+  Int32 LastSourceExperience;
+  Int32 LastSourceAbilityUntilTick;
+  Byte LastSourceStructureLevel;
+  Int32 ArrivalTick;
+}
+
+component AaiSummon {
+  Int32 ExpiresAtTick;
+}
+
+component AaiCorpse {
+  Int32 ExpiresAtTick;
+}

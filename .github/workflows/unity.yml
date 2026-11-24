@@ -1,0 +1,35 @@
+name: Quantum Unity validation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editor-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - run: node Reference/validate-package.mjs && node Reference/compile-assets.mjs --check
+      - name: Check authorized Quantum installation
+        run: node Reference/check-unity-installation.mjs
+      - name: Run Unity tests
+        uses: game-ci/unity-test-runner@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          projectPath: .
+          unityVersion: auto
+          testMode: editmode
+          customParameters: -testFilter AshAndIron
+          artifactsPath: TestResults
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: unity-editor-tests
+          path: TestResults
+          if-no-files-found: ignore

@@ -1,0 +1,52 @@
+// 16x16 cells per chunk, row-major. Owner is the team/seat's player entity.
+// Coverage counts support overlapping sight sources; explored remains sticky.
+component AaiFogChunk {
+  entity_ref Owner;
+  Int32 ChunkIndex;
+  bitset[256] Visible;
+  bitset[256] Explored;
+  array<UInt16>[256] Coverage;
+}
+
+// The baked map stays immutable. Configured/depleted tiles are frame state.
+component AaiTerrainChunk {
+  Int32 ChunkIndex;
+  array<AaiTerrain>[256] Tiles;
+  bitset[256] Depleted;
+}
+
+// One index per owner. Key = radius-in-tenths * map cell count + cell index.
+// Counts share identical circles; the chunk coverage changes only at 0<->1.
+component AaiFogStampIndex {
+  entity_ref Owner;
+  [AllocateOnComponentAdded, FreeOnComponentRemoved] dictionary<Int32, Int32> References;
+}
+
+component AaiTransport {
+  Int32 Capacity;
+  Int32 ReservedPopulation;
+  Int32 LoadedPopulation;
+  [AllocateOnComponentAdded, FreeOnComponentRemoved] list<entity_ref> Passengers;
+  [AllocateOnComponentAdded, FreeOnComponentRemoved] list<entity_ref> PendingPassengers;
+  FPVector2 PickupLand;
+  FPVector2 PickupWater;
+  Int32 PickupTimeoutTick;
+  bool HasLandingDestination;
+  FPVector2 LandingDestination;
+  Int32 UnloadTotal;
+  Int32 UnloadRetryTick;
+}
+
+component AaiEmbarked {
+  entity_ref Transport;
+}
+
+component AaiComputer {
+  AaiDifficulty Difficulty;
+  AaiStrategy Strategy;
+  FPVector2 Home;
+  FPVector2 PublicEnemyProbe;
+  Int32 NextAssaultTick;
+  Int32 Recruits;
+  [AllocateOnComponentAdded, FreeOnComponentRemoved] list<entity_ref> Attacking;
+}
