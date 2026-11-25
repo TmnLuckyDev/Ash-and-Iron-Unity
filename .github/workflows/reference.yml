@@ -15,3 +15,4 @@ jobs:
           node-version: '24'
       - run: node Reference/validate-package.mjs
       - run: node Reference/compile-assets.mjs --check
+      - run: node --test Reference/terrain-preview.test.mjs
