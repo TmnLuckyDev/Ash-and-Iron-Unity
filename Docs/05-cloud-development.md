@@ -11,6 +11,18 @@ This is the independent Unity project source. No Unity editor, licensed Photon S
 5. Add `AaiOpeningSystem`, `AaiCommandSystem`, then `AaiMovementSystem` to the SDK's user system setup (preserve the SDK's necessary systems). Register `AaiMoveUnitCommand` in the SDK's command setup. Use the actual generated SDK hooks, not a second partial method implementation. Verify the assets and scene configuration on both clients. This integration is not yet performed.
 6. Run the `AshAndIron.Tests.AshAndIronPrototypeTests` EditMode tests in the Unity Test Runner. Test the SDK's own local example scene before attempting the Ash & Iron prototype. A scene, input bridge and entity presentation are still needed for a playable prototype.
 
+## Terrain preview
+
+Generate a low-poly terrain model and material file from a reference map with Node 24.
+
+```sh
+node Reference/export-terrain-preview.mjs shattered-isles Builds/TerrainPreview
+node Reference/export-terrain-preview.mjs pinewatch-vale Builds/TerrainPreview 42 control
+node --test Reference/terrain-preview.test.mjs
+```
+
+Keep the generated `.obj` and `.mtl` together when importing them for a visual Unity test. One mesh unit represents one reference tile. In the source mesh, the original map's horizontal and vertical coordinates map to X and Z respectively. Confirm the import axis and scale before aligning simulation entities with the model. The mesh includes terrain colours, forest and rock shapes, bridges and both spawn markers. The exporter is tested independently of Unity. Unity import, scene lighting and in-game rendering remain to be verified in the editor.
+
 ## Cloud testing
 
 The `Reference integrity` workflow checks the data in this repository on push. `Quantum Unity validation` is manual and requires a licensed SDK in the runner's project, SDK-generated user files, and valid Unity licensing. It deliberately fails its SDK preflight rather than pretending that an SDK-free build passes. For public repositories, keep the SDK in an authorized private build workspace or runner and configure its installation there. Do not commit licensed third-party packages or Photon app settings to public history. No paid subscription or cloud runner is ordered by this project.
